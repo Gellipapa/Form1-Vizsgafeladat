@@ -1,0 +1,9 @@
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\bin\Debug\Forma1.exe.config
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\bin\Debug\Forma1.exe
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\bin\Debug\Forma1.pdb
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.csprojAssemblyReference.cache
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.Form1Form.resources
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.Properties.Resources.resources
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.csproj.GenerateResource.cache
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.exe
+J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.pdb
