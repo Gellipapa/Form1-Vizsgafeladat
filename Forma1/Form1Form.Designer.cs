@@ -93,6 +93,7 @@
             this.buttonAddTeam.TabIndex = 12;
             this.buttonAddTeam.Text = "Hozzáad";
             this.buttonAddTeam.UseVisualStyleBackColor = true;
+            this.buttonAddTeam.Click += new System.EventHandler(this.buttonAddTeam_Click);
             // 
             // labelTeamName
             // 

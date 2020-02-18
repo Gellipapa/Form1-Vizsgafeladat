@@ -20,7 +20,7 @@
       <Field Name="f1Repository" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Forma1.Repository.F1">
+  <Class Name="Forma1.Repository.F1" Collapsed="true">
     <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>

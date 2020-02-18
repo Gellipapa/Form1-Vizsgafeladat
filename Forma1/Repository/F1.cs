@@ -5,8 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Forma1.Repository
+    
+
 {   /// <summary>
-/// A csapat neve
+/// A  F1 nyilvántartó osztály
+/// Szolgáltatást nyújt a Service rétegnek
 /// </summary>
     class F1
     {
