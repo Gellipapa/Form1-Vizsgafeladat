@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Forma1.myExceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,7 @@ namespace Forma1.Repository
         {
             teams = new List<Team>();
         }
+
         /// <summary>
         /// Létrehozz egy új csapatott az F1-ben
         /// </summary>
@@ -32,6 +34,24 @@ namespace Forma1.Repository
         {
             Team t = new Team(name);
             teams.Add(t);
+        }
+        /// <summary>
+        /// A teamet hozzáadja a teamek listájához
+        /// </summary>
+        /// <param name="t">A csapat listához hozzáadott csapat</param>
+        public void add(Team t)
+        {
+            if (teams == null)
+
+            {
+                throw new F1Exception("Végzetes hiba, team lista nincs példányosítva!");
+                
+            }
+            else
+            {
+                teams.Add(t);
+            }
+            
         }
 
 

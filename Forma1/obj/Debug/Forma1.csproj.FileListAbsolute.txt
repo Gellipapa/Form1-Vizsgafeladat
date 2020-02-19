@@ -7,3 +7,12 @@ J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.Properties
 J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.csproj.GenerateResource.cache
 J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.exe
 J:\Gyuris c# 2020\MVCDeveloping-master\Forma1\Forma1\obj\Debug\Forma1.pdb
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\bin\Debug\Forma1.exe.config
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\bin\Debug\Forma1.exe
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\bin\Debug\Forma1.pdb
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\obj\Debug\Forma1.csprojAssemblyReference.cache
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\obj\Debug\Forma1.Form1Form.resources
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\obj\Debug\Forma1.Properties.Resources.resources
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\obj\Debug\Forma1.csproj.GenerateResource.cache
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\obj\Debug\Forma1.exe
+C:\Users\sz8horgel\Downloads\valami23\Form1-Vizsgafeladat\Forma1\obj\Debug\Forma1.pdb

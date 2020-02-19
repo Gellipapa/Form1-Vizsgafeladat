@@ -1,4 +1,5 @@
-﻿using Forma1.Repository;
+﻿using Forma1.myExceptions;
+using Forma1.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +21,19 @@ namespace Forma1.service
         {
             f1Repository=new F1();        }
 
-        internal void addTeam(string teamName)
+        public void addTeam(string teamName)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Team t = new Team(teamName);
+                f1Repository.add(t);
+            }
+            catch(F1Exception f1e)
+            {
+                throw new TeamServiceException(f1e.Message);
+            }
+            
         }
+
     }
 }
