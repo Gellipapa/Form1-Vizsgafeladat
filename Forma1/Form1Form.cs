@@ -14,8 +14,10 @@ namespace Forma1
     public partial class Form1Form : Form
     {
         F1Controller controller;
+
         public Form1Form()
         {
+            controller = new F1Controller();
             InitializeComponent();
         }
 

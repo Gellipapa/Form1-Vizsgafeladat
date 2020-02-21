@@ -32,8 +32,15 @@ namespace Forma1.Repository
         /// <param name="name"> Új csapat neve</param>
         public void add(string name)
         {
-            Team t = new Team(name);
-            teams.Add(t);
+            if (teams == null)
+            {
+                throw new F1Exception("Végzetes hiba,Team lista nincs peldanyositva");
+            }
+            else
+            {
+                Team t = new Team(name);
+                teams.Add(t);
+            }
         }
         /// <summary>
         /// A teamet hozzáadja a teamek listájához
