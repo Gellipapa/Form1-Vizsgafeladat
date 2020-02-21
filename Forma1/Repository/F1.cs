@@ -26,6 +26,19 @@ namespace Forma1.Repository
             teams = new List<Team>();
         }
 
+
+        public List<Team> getTeams()
+        {
+            if (teams == null)
+            {
+                throw new F1Exception("Végzetes hiba,Team lista nincs peldanyositva");
+            }
+            else
+            {
+                return teams;
+            }
+        }
+
         /// <summary>
         /// Létrehozz egy új csapatott az F1-ben
         /// </summary>
@@ -42,6 +55,9 @@ namespace Forma1.Repository
                 teams.Add(t);
             }
         }
+
+        
+
         /// <summary>
         /// A teamet hozzáadja a teamek listájához
         /// </summary>

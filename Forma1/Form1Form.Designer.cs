@@ -75,6 +75,7 @@
             this.buttonDeleteTeam.TabIndex = 14;
             this.buttonDeleteTeam.Text = "Töröl";
             this.buttonDeleteTeam.UseVisualStyleBackColor = true;
+            this.buttonDeleteTeam.Click += new System.EventHandler(this.buttonDeleteTeam_Click);
             // 
             // buttonUpdateTeam
             // 

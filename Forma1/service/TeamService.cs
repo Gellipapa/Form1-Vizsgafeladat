@@ -35,5 +35,16 @@ namespace Forma1.service
             
         }
 
+        public List<Team> getTeams()
+        {
+            try
+            {
+               return f1Repository.getTeams();
+
+            }catch(F1Exception f1e)
+            {
+                throw new TeamServiceException(f1e.Message);
+            }
+        }
     }
 }

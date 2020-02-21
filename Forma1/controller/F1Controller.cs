@@ -13,6 +13,9 @@ namespace Forma1.controller
     class F1Controller
     {
         TeamService teamService;
+
+        
+
         /// <summary>
         /// Controller réteg kapcsolatot teremt a GUI és a Service réteg között
         /// Feladata a bemenő adatok vizsgálata
@@ -37,6 +40,55 @@ namespace Forma1.controller
                 Debug.WriteLine(tse.Message);
             }
             
+        }
+
+        public void deleteTeam(string teamNameToDelete)
+        {
+            try
+            {
+
+                if (!teamService.IsExist(teamNameToDelete))
+                {
+                    throw new Exception();
+                }
+
+                else
+                {
+                    teamService.deleteTeam(teamNameToDelete);
+                }
+
+
+            }catch(TeamServiceException tse)
+            {
+                Debug.WriteLine(tse.Message);
+            }
+        }
+
+        public List<string> getTeamNames()
+        {
+            try
+            {
+                List<Team> teams = teamService.getTeams();
+                return TeamListToTeamNameList(teams);
+
+            }
+            catch (TeamServiceException tse)
+            {
+
+                Debug.WriteLine(tse.Message);
+                List<string> teamNames = new List<string>();
+                return null;
+            }
+        }
+
+        private List<string> TeamListToTeamNameList(List<Team> teams)
+        {
+            List<string> teamNames = new List<string>();
+            foreach(Team t in teams)
+            {
+                teamNames.Add(t.getTeamName());
+            }
+            return teamNames;
         }
     }
 }

@@ -16,7 +16,37 @@ namespace Forma1
         {
             string teamName = textBoxTeamName.Text;
             controller.addTeamToF1(teamName);
+            listBoxTeam.DataSource = null;
+            listBoxTeam.DataSource = controller.getTeamNames();
+            textBoxTeamName.Text = "";
+
             
+        }
+
+        private void buttonDeleteTeam_Click(object sender, EventArgs e)
+        {
+
+            if (listBoxTeam.SelectedIndex < 0)
+            {
+                return;
+            }
+
+            string teamNameToDelete = listBoxTeam.Text;
+            controller.deleteTeam(teamNameToDelete);
+            listBoxTeam.DataSource = null;
+            listBoxTeam.DataSource = controller.getTeamNames();
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
