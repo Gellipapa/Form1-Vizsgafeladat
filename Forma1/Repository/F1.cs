@@ -55,8 +55,32 @@ namespace Forma1.Repository
                 teams.Add(t);
             }
         }
+        /// <summary>
+        /// Ellenőrzi a hogy a csapat neve létezik e a listában
+        /// </summary>
+        /// <param name="teamName">keresett csapat neve</param>
+        /// <returns>true ha igen, false ha nem talált</returns>
+        public bool IsExist(string teamName)
+        {
+            if (teams == null)
+            {
+                throw new F1Exception("Végzetes hiba,Team lista nincs peldanyositva");
+            }
+            else
+            {
+                foreach(Team t in teams)
+                {
+                    if (t.getTeamName() == teamName)
+                    {
+                        return true;
+                    }
+                   
+                }
+                return false;
+            }
+        }
 
-        
+
 
         /// <summary>
         /// A teamet hozzáadja a teamek listájához
