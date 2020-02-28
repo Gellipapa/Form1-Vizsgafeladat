@@ -1,4 +1,5 @@
 ﻿using Forma1.model;
+using Forma1.myExceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +37,17 @@ namespace Forma1.Repository
         public string getTeamName()
         {
             return name;
+        }
+        /// <summary>
+        /// A csapat versenyzőinek száma
+        /// </summary>
+        /// <returns></returns>
+        public int getNumberOfRacers()
+        {
+            if (racers == null)
+                throw new TeamException("Végzetes hiba a races lista nincs pédányosítva.");
+            else
+                return racers.Count;
         }
     }
 }

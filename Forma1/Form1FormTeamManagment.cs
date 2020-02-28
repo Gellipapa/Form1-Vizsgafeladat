@@ -25,7 +25,14 @@ namespace Forma1
 
         private void buttonDeleteTeam_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
+            catch ()
+            {
+
+            }
             if (listBoxTeam.SelectedIndex < 0)
             {
                 return;

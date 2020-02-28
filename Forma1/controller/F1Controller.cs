@@ -60,9 +60,12 @@ namespace Forma1.controller
                     }
                     catch (TeamServiceException tse)
                     {
-
+                        Debug.WriteLine(tse.Message);
                     }
+
+                    catch(TeamServiceToGUIException tsge)
                     {
+                        throw new ControllerException(tsge.Message);
 
                     }
                     

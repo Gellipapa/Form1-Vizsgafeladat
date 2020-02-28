@@ -75,7 +75,7 @@ namespace Forma1.service
 
                 if (numberOfTeamRacers > 0)
                 {
-                    throw new TeamServiceException(teamNameToDelete+" nem lehet törölni mert, vannak még versenyzőik!");
+                    throw new TeamServiceToGUIException(teamNameToDelete+" nem lehet törölni mert, vannak még versenyzőik!");
                 }
                 else
                 {
