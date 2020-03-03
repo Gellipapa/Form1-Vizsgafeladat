@@ -100,6 +100,7 @@ namespace Forma1.Repository
                     if (t.getTeamName() == teamNameToDelete)
                     {
                         teams.RemoveAt(index);
+                        return;
                     }
                     index = index + 1;
                         

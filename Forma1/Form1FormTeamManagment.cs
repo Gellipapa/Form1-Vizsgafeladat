@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Forma1.myExceptions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,23 +26,23 @@ namespace Forma1
 
         private void buttonDeleteTeam_Click(object sender, EventArgs e)
         {
+            errorProviderDeleteTeam.Clear();
             try
             {
-
+                
+                if (listBoxTeam.SelectedIndex < 0)
+                {
+                    return;
+                }
+                string teamNameToDelete = listBoxTeam.Text;
+                controller.deleteTeam(teamNameToDelete);
+                listBoxTeam.DataSource = null;
+                listBoxTeam.DataSource = controller.getTeamNames();
             }
-            catch ()
+            catch(ControllerException ce)
             {
-
+                errorProviderDeleteTeam.SetError(buttonDeleteTeam, ce.Message);
             }
-            if (listBoxTeam.SelectedIndex < 0)
-            {
-                return;
-            }
-
-            string teamNameToDelete = listBoxTeam.Text;
-            controller.deleteTeam(teamNameToDelete);
-            listBoxTeam.DataSource = null;
-            listBoxTeam.DataSource = controller.getTeamNames();
 
 
 
