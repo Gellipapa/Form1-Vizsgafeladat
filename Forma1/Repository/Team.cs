@@ -49,5 +49,10 @@ namespace Forma1.Repository
             else
                 return racers.Count;
         }
+
+        public void update(string newTeamName)
+        {
+            name = newTeamName;
+        }
     }
 }

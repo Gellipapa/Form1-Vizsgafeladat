@@ -110,6 +110,26 @@ namespace Forma1.Repository
             }
         }
 
+        public void update(string oldTeamName, string newTeamName)
+        {
+            if (teams == null)
+            {
+                throw new F1Exception("Végzetes hiba, team lista nincs példányosítva!");
+            }
+            else
+            {
+                foreach(Team t in teams)
+                {
+                    if (t.getTeamName() == oldTeamName)
+                    {
+                        t.update(newTeamName);
+                        return;
+                    }
+                    throw new F1Exception(oldTeamName + " csapat nem található nem lehet módosítani!");
+                }
+            }
+        }
+
         /// <summary>
         /// teamName a csapat versenyzőinek száma
         /// </summary>

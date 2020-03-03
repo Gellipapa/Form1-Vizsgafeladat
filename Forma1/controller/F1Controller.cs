@@ -78,6 +78,23 @@ namespace Forma1.controller
             }
         }
 
+        public void modifyTeamName(string oldTeamName, string newTeamName)
+        {
+            try
+            {
+                if (teamService.IsExist(newTeamName))
+                {
+                    throw new ControllerException(newTeamName + "nevű csapat már létezik! Erre névre nem lehet módosítani!");
+                }
+                teamService.modifyTeamName(oldTeamName, newTeamName);
+            }
+            catch(TeamServiceException tse)
+            {
+                Debug.WriteLine(tse.Message);
+            }
+            
+        }
+
         public List<string> getTeamNames()
         {
             try

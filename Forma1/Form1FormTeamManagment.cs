@@ -44,17 +44,27 @@ namespace Forma1
                 errorProviderDeleteTeam.SetError(buttonDeleteTeam, ce.Message);
             }
 
-
-
-
-
-
-
-
-
-
-
-
         }
+
+        private void buttonUpdateTeam_Click(object sender, EventArgs e)
+        {
+            errorProviderModify.Clear();
+            try
+            {
+                string oldTeamName = listBoxTeam.Text;
+                string newTeamName = textBoxTeamName.Text;
+
+                controller.modifyTeamName(oldTeamName, newTeamName);
+                listBoxTeam.DataSource = null;
+                listBoxTeam.DataSource = controller.getTeamNames();
+            }
+            catch(ControllerException ce)
+            {
+                errorProviderModify.SetError(buttonUpdateTeam, ce.Message);
+            }
+            
+        }
+
+
     }
 }
