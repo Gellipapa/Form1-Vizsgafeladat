@@ -13,6 +13,7 @@ namespace Forma1
 {
     public partial class Form1Form : Form
     {
+
         F1Controller controller;
 
         public Form1Form()
@@ -21,6 +22,6 @@ namespace Forma1
             InitializeComponent();
         }
 
-        
+
     }
 }

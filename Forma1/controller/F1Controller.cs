@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Forma1.controller
 {
-    class F1Controller
+    partial class F1Controller
     {
         TeamService teamService;
 
@@ -27,7 +27,6 @@ namespace Forma1.controller
             teamService = new TeamService();
         }
 
-        
 
         public void addTeamToF1(string teamName)
         {
