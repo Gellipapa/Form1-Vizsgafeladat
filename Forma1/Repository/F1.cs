@@ -1,4 +1,5 @@
-﻿using Forma1.myExceptions;
+﻿using Forma1.model;
+using Forma1.myExceptions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,7 +14,7 @@ namespace Forma1.Repository
 /// A  F1 nyilvántartó osztály
 /// Szolgáltatást nyújt a Service rétegnek
 /// </summary>
-    class F1
+    partial class F1
     {
         /// <summary>
         /// Az F1 csapatok
@@ -184,8 +185,6 @@ namespace Forma1.Repository
             }
             
         }
-
-
 
 
     }

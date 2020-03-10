@@ -11,7 +11,7 @@ namespace Forma1.Repository
     /// <summary>
     /// A Forma 1-ben versenyző csapatok
     /// </summary>
-    class Team
+    partial class Team
     {
         /// <summary>
         /// Versenyző neve
@@ -30,6 +30,7 @@ namespace Forma1.Repository
             this.name = name;
             racers = new List<Racer>();
         }
+
         /// <summary>
         /// Visszaadja a csapat nevet
         /// </summary>

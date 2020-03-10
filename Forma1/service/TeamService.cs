@@ -1,4 +1,5 @@
-﻿using Forma1.myExceptions;
+﻿using Forma1.model;
+using Forma1.myExceptions;
 using Forma1.Repository;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Forma1.service
 {
-    class TeamService
+    partial class TeamService
     {
         /// <summary>
         /// Service réteg feladata az üzleti logika megvalósítása
@@ -89,6 +90,8 @@ namespace Forma1.service
                 throw new TeamServiceException(f1e.Message);
             }
         }
+
+        
 
         public void modifyTeamName(string oldTeamName, string newTeamName)
         {

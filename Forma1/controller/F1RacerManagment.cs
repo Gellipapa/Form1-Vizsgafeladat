@@ -1,4 +1,5 @@
-﻿using Forma1.myExceptions;
+﻿using Forma1.model;
+using Forma1.myExceptions;
 using Forma1.Repository;
 using Forma1.service;
 using System;
@@ -47,7 +48,22 @@ namespace Forma1.controller
             }
             if (newRacerSalary <= 0)
             {
-                throw new ControllerException("A versenyző fizetése nem lehet kisebb vagy nulla!");
+                throw new ControllerException("A versenyző fizetése nem lehet negatív vagy nulla!");
+            }
+
+            try
+            {
+                Racer r = new Racer(racerName, newRacerAge, newRacerSalary);
+                teamService.addRacerToTeam(teamName,r);
+            }
+            catch(TeamServiceToGUIException tstge)
+            {
+                Debug.WriteLine(tstge.Message);
+                throw new ControllerException(tstge.Message);
+            }
+            catch(TeamServiceException tse)
+            {
+                Debug.WriteLine(tse.Message);
             }
 
 

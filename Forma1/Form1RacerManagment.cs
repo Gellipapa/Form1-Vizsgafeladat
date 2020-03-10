@@ -28,7 +28,7 @@ namespace Forma1
             }
             catch(ControllerException ce)
             {
-
+                errorProviderAddRacer.SetError(buttonAddRacer,ce.Message);
             }
             
 
